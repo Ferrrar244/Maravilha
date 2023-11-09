@@ -12,6 +12,7 @@
         <h2>Insira o código do produto:</h2>
         <input type="text" id="produtoInput">
         <button onclick="exibirDados()">Pesquisar</button>
+        <button onclick="listarProduto()">Relatório de Estoque</button>
         </br>
         </br>
         <h2>Dados do produto:</h2>
@@ -37,6 +38,17 @@
                 " - " +
                 "QTD: " + (produtos[codigo - 1].quantidade);
         };
+
+        //Lista todos os produtos da array de umam vez, usando um laço de repetição, para que mostre todos os itens da mesma
+        function listarProduto() {
+            var conteudo = "";
+
+            for (var i = 0; i < produtos.length; i++) {
+                conteudo += "Código: " + produtos[i].codigo + ", Descrição: " + produtos[i].descricao + ", Quantidade: " + produtos[i].quantidade + "<br>";
+            }
+
+            dadosProduto.innerHTML = conteudo;
+        }
     </script>
 </body>
 
