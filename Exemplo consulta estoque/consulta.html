@@ -13,9 +13,11 @@
         <input type="text" id="produtoInput">
         <button onclick="exibirDados()">Pesquisar</button>
         <button onclick="listarProduto()">Relatório de Estoque</button>
+        <button onclick="addProduto()">Comprar</button>
+        <button onclick="listarProdutoCompra()">Lista de compras</button>
         </br>
         </br>
-        <h2>Dados do produto:</h2>
+        <h2>Produto:</h2>
         <div id="dadosProduto"></div>
     </div>
 
@@ -49,6 +51,24 @@
 
             dadosProduto.innerHTML = conteudo;
         }
+
+        var compras = [];
+
+        //Adicionando produtos a array
+        function addProduto() {
+            let cod = document.getElementById("produtoInput").value;
+            compras.push({ codigo: cod });
+            // produtoInput.value = '';
+        }
+
+        function listarProdutoCompra() {
+            var conteudo = "";
+            for (var i = 0; i < compras.length; i++) {
+                conteudo += "Código: " + compras[i].codigo + "<br>";
+            }
+            document.getElementById("dadosProduto").innerHTML = conteudo;
+        }
+
     </script>
 </body>
 
