@@ -6,6 +6,10 @@ Objetos: São instâncias concretas de classes que representam entidades do mund
 
 Classes: São modelos ou blueprints para criar objetos. Uma classe define os atributos e métodos comuns a todos os objetos de um determinado tipo.
 
+Atributos: são características ou propriedades que descrevem o estado de um objeto. Cada objeto pertencente a uma classe tem seus próprios valores específicos para esses atributos. Eles são frequentemente definidos na classe e representam as características essenciais que distinguem os objetos dessa classe
+
+
+PILARES OO:
 Encapsulamento: É o conceito de agrupar dados (atributos) e os métodos que operam nesses dados em uma única unidade, ou seja, em um objeto. O encapsulamento ajuda a ocultar a implementação interna e a expor apenas a interface necessária.
 
 Herança: Permite que uma classe herde características de outra. A classe que é herdada é chamada de superclasse, e a classe que herda é chamada de subclasse. Isso promove a reutilização de código e a criação de hierarquias de classes.
@@ -14,4 +18,5 @@ Polimorfismo: Permite que objetos de diferentes classes sejam tratados de maneir
 
 Abstração: É a capacidade de modelar objetos do mundo real como abstrações em software. Abstrair significa focar nos aspectos mais relevantes de um objeto, ignorando os detalhes menos importantes.
 
+VANTAGENS:
 A programação orientada a objetos oferece vantagens como modularidade, reutilização de código, flexibilidade e manutenção facilitada. Muitas linguagens de programação, como Java, C++, Python e C#, são projetadas com suporte a orientação a objetos. Essa abordagem é amplamente utilizada no desenvolvimento de software, especialmente em sistemas complexos e de grande escala.
