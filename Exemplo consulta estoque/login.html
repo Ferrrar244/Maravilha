@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Biblioteca Online</title>
+</head>
+<body>
+    <h1>Login</h1>
+    
+    <!-- Formulário de Login -->
+    <form id="login-form">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button id="search-btn">login</button>
+        
+    </form>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            
+            // Obter os valores do formulário
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            // Verificar se os dados de login são válidos (exemplo: usuário=admin, senha=123)
+            if (username === 'gabrielfrosa.1006@gmail.com' && password === '2020') {
+                
+                window.location.href = "index.html";
+            } else {
+                
+                alert("Usuário ou senha incorretos. Tente novamente.");
+            }
+        });
+    </script>
+
+<style>
+    #search-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #0878f0;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+
+
+
+
+
+</body>
+</html>
