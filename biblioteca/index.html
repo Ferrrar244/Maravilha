@@ -237,7 +237,7 @@
             } else {
                
                 alert("TENTE NOVAMENTE");
-            }
+            } 
         });
     </script>
 
@@ -268,8 +268,8 @@
                     var bookAuthor = button.parentElement.querySelector('p:nth-of-type(1)').innerText;
                     var bookYear = button.parentElement.querySelector('p:nth-of-type(2)').innerText;
                     var bookISBN = button.parentElement.querySelector('p:nth-of-type(3)').innerText;
+                
                     
-                    // Perguntar ao usuário quantos exemplares deseja reservar
                     var quantity = prompt("Quantos exemplares de '" + bookTitle + "' você deseja reservar?", "1");
                     quantity = parseInt(quantity);
 
@@ -292,7 +292,7 @@
 
 <h3>Comentários:</h3>
     <div id="comments">
-        <!-- Comentários serão exibidos aqui -->
+       
     </div>
     
     <h3>Deixe seu Comentário:</h3>
@@ -308,20 +308,20 @@
 
     <script>
         document.getElementById('comment-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede o envio do formulário
+            event.preventDefault(); 
             
-            // Obter os valores do formulário
+            
             var name = document.getElementById('name').value;
             var comment = document.getElementById('comment').value;
             
-            // Criar um novo elemento de comentário
+            
             var newComment = document.createElement('div');
             newComment.innerHTML = '<strong>' + name + ':</strong> ' + comment;
             
-            // Adicionar o novo comentário à lista de comentários
+         
             document.getElementById('comments').appendChild(newComment);
             
-            // Limpar o formulário após o envio do comentário
+            
             document.getElementById('name').value = '';
             document.getElementById('comment').value = '';
         });
